@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Request Information | Kobis Travels & Tours Ltd</title>
+    <meta name="description" content="Request study abroad or visa pathway information from Kobis Travels and Tours Ltd. Provide your details for personalized guidance." />
+    <link rel="icon" type="image/png" href="./images/kobis_logo.png" />
+    <link rel="apple-touch-icon" href="./images/kobis_logo.png" />
+    <link rel="preload" as="image" href="./images/kobis_logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body class="page-request-info">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav__brand" aria-label="Kobis Travels and Tours Ltd">
+          <a href="index.html#home"><img src="./images/kobis_logo.png" alt="Kobis Travels and Tours Ltd" class="nav__logo" width="140" height="56" loading="eager" /></a>
+        </div>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="request-info.html" aria-current="page">Request Info</a></li>
+          <li class="nav__destinations">
+            <div class="nav__select-wrapper">
+              <label class="sr-only" for="destinationsReq">Study Destinations</label>
+              <select id="destinationsReq" class="nav__select js-destination-select" aria-label="Study Destinations">
+                <option value="" selected disabled>Destinations</option>
+                <option value="australia.html">Australia</option>
+                <option value="canada.html">Canada</option>
+                <option value="united-kingdom.html">United Kingdom</option>
+                <option value="united-states.html">United States</option>
+                <option value="new-zealand.html">New Zealand</option>
+              </select>
+            </div>
+          </li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="main">
+      <section class="hero hero--sub" aria-label="Request Information Hero">
+        <div class="hero__overlay hero__overlay--solid"></div>
+        <div class="container hero__content hero__content--narrow">
+          <h1 class="hero__title">Request Information / Start Admission Process</h1>
+          <p class="hero__subtitle">Provide accurate details so we can assess your eligibility and map a clear pathway.</p>
+          <div class="hero__actions">
+            <a href="#request-info" class="btn btn--primary btn--lg">Start Now</a>
+            <a href="index.html#services" class="btn btn--ghost btn--lg">View Services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="request-info" aria-labelledby="request-info-heading">
+        <div class="container request-info-grid">
+          <div class="stack" data-animate>
+            <h2 id="request-info-heading">Your Details</h2>
+            <p>We review each submission carefully. Fields marked with * are required.</p>
+            <ul class="info-list">
+              <li>Tailored study pathway recommendations.</li>
+              <li>Visa & documentation readiness guidance.</li>
+              <li>Financial planning alignment and timelines.</li>
+            </ul>
+            <p class="form-hint form-hint--left">Response within 1 business day. Your data is confidential.</p>
+            <p><a href="index.html#contact" class="text-link">Prefer direct contact? Reach us here.</a></p>
+          </div>
+          <form class="contact-form admission-form" aria-label="Admission request form" onsubmit="event.preventDefault(); alert('Thank you! Your admission request has been received.'); this.reset();">
+            <div class="form-row">
+              <label for="req-fullname">Full Name*</label>
+              <input id="req-fullname" name="fullName" required placeholder="Surname First Middle" />
+            </div>
+            <div class="form-row">
+              <label for="req-email">Email Address*</label>
+              <input id="req-email" type="email" name="email" required placeholder="you@example.com" />
+            </div>
+            <div class="form-row">
+              <label for="req-phone">Phone Number*</label>
+              <input id="req-phone" name="phone" required placeholder="+234 ..." />
+            </div>
+            <div class="form-row">
+              <label for="req-age">Age*</label>
+              <input id="req-age" name="age" type="number" min="10" max="80" required placeholder="e.g. 22" />
+            </div>
+            <div class="form-row">
+              <label for="req-level">Preferred Study Level*</label>
+              <select id="req-level" name="studyLevel" required>
+                <option value="" disabled selected>Select level</option>
+                <option>Undergraduate</option>
+                <option>Postgraduate / Masters</option>
+                <option>Doctorate (PhD)</option>
+                <option>Diploma / Certificate</option>
+                <option>Pathway / Foundation</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="req-sponsor">Who Is Your Sponsor?*</label>
+              <select id="req-sponsor" name="sponsor" required>
+                <option value="" disabled selected>Select sponsor</option>
+                <option>Self</option>
+                <option>Parent / Guardian</option>
+                <option>Relative</option>
+                <option>Scholarship</option>
+                <option>Organization / Employer</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="req-location">Study Location*</label>
+              <select id="req-location" name="studyLocation" required>
+                <option value="" disabled selected>Select country / region</option>
+                <option>Canada</option>
+                <option>United Kingdom</option>
+                <option>United States</option>
+                <option>Australia</option>
+                <option>Europe (Other)</option>
+                <option>Asia</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="req-notes">Additional Notes (Optional)</label>
+              <textarea id="req-notes" name="notes" rows="4" placeholder="Current qualification, target intake, questions..."></textarea>
+            </div>
+            <button class="btn btn--primary btn--full" type="submit">Submit Request</button>
+            <p class="form-hint">Consultation sessions billed at N10,000 per hour.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer footer-enhanced" role="contentinfo">
+      <div class="footer-cta-band" data-animate>
+        <div class="container footer-cta__inner">
+          <div class="footer-cta__text">
+            <h2 class="footer-cta__title">Need Clarification?</h2>
+            <p class="footer-cta__lead">Chat with us or submit your details for tailored admission guidance.</p>
+          </div>
+          <div class="footer-cta__actions">
+            <a href="index.html#contact" class="btn btn--secondary btn--lg">Contact</a>
+            <a href="#request-info" class="btn btn--ghost btn--lg">Submit Form</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-grid">
+        <div class="footer-col footer-about footer-card" data-animate>
+          <h3 class="footer-title"><span data-feather="info" aria-hidden="true"></span> <span>About Us</span></h3>
+          <p class="footer-text">Kobis Travels and Tours Ltd specializes in personalized travel and educational consulting services designed to help you achieve your goals — whether you're planning to study abroad, apply for a visit visa, or need professional guidance on navigating your next big step.</p>
+        </div>
+        <div class="footer-col footer-location footer-card" data-animate>
+          <h3 class="footer-title"><span data-feather="map-pin" aria-hidden="true"></span> <span>Address</span></h3>
+          <ul class="footer-address-list" aria-label="Office address">
+            <li>The Plaza before the, Emperor Chopsticks Plaza</li>
+            <li>Opposite Quest Petrol Station, Admiralty Way</li>
+            <li>Lekki - Ikoyi Link Bridge, Eti-Osa, Lekki</li>
+            <li>Lagos, Nigeria</li>
+          </ul>
+          <div class="footer-hours-wrap">
+            <h3 class="footer-title footer-hours-title"><span data-feather="clock" aria-hidden="true"></span> <span>Opening Hours</span></h3>
+            <p class="footer-hours"><strong>Mon – Fri:</strong> 09:00 AM – 5:00 PM<br /><span class="hours-note">(Closed weekends & public holidays)</span></p>
+          </div>
+        </div>
+        <div class="footer-col footer-contact-col footer-card" data-animate>
+          <h3 class="footer-title footer-contact-heading"><span data-feather="phone-call" aria-hidden="true"></span> <span>Contact</span></h3>
+          <div class="footer-contact-block">
+            <a href="tel:+2348143574770" class="footer-phone big-call">+234 814 357 4770</a>
+            <a href="mailto:kobistravelsandtours@gmail.com" class="footer-email-link">kobistravelsandtours@gmail.com</a>
+          </div>
+          <ul class="footer-social" aria-label="Social media">
+            <li><a href="https://facebook.com/kobistravelsandtours" target="_blank" rel="noopener" aria-label="Facebook" class="social-circle"><span data-feather="facebook" aria-hidden="true"></span><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://instagram.com/kobistravelsandtours" target="_blank" rel="noopener" aria-label="Instagram" class="social-circle"><span data-feather="instagram" aria-hidden="true"></span><span class="sr-only">Instagram</span></a></li>
+            <li><a href="https://tiktok.com/@kobistravelsandtours" target="_blank" rel="noopener" aria-label="TikTok" class="social-circle"><span data-feather="share-2" aria-hidden="true"></span><span class="sr-only">TikTok</span></a></li>
+          </ul>
+          <p class="footer-mini-note">We respond within 1 business day.</p>
+        </div>
+      </div>
+      <div class="container footer-bottom footer-bottom--enhanced">
+        <div class="footer-bottom__line" aria-hidden="true"></div>
+        <div class="footer-bottom__content">
+          <p class="copyright"><span class="copy-symbol" aria-hidden="true">©</span> <span id="yearCopy">2025</span> <span class="copy-name">Kobis Travels and Tours Ltd.</span> <span class="copy-rights">All rights reserved.</span></p>
+          <p class="tagline"><span class="tagline-accent" aria-hidden="true">★</span> <span>Your Journey Starts Here</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/2348143574770" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C9.41 3 4 8.41 4 15.05c0 2.65.87 5.1 2.36 7.11L4 29l7.1-2.32a12.04 12.04 0 0 0 4.94 1.05h.01c6.63 0 12.04-5.41 12.04-12.05C28.09 8.41 22.68 3 16.04 3Zm6.99 17.3c-.3.84-1.73 1.6-2.39 1.7-.61.09-1.38.13-2.23-.14-.52-.17-1.18-.38-2.04-.74-3.6-1.55-5.94-5.17-6.12-5.41-.18-.25-1.46-1.94-1.46-3.7 0-1.75.92-2.61 1.25-2.97.34-.36.74-.45.99-.45.25 0 .5 0 .72.01.23.01.54-.09.85.65.3.75 1.02 2.58 1.11 2.77.09.19.15.41.03.66-.11.25-.17.41-.34.63-.18.21-.37.47-.53.63-.18.18-.37.38-.16.74.2.36.9 1.48 1.93 2.4 1.33 1.18 2.45 1.55 2.81 1.73.36.19.57.16.78-.09.2-.25.9-1.05 1.14-1.41.25-.36.48-.3.81-.18.34.11 2.11.99 2.47 1.17.36.18.6.27.69.42.09.15.09.84-.21 1.68Z" fill="currentColor"/></svg>
+    </a>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

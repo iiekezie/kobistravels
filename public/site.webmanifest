@@ -1,0 +1,11 @@
+{
+  "name": "Kobis Travels & Tours Ltd",
+  "short_name": "Kobis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0057b8",
+  "icons": [
+    { "src": "/favicon.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

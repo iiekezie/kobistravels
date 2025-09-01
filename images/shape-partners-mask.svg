@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 <svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Partners section background"><defs><radialGradient id="pg" cx="15%" cy="50%" r="85%"><stop offset="0%" stop-color="#2f6da8" stop-opacity="0.45"/><stop offset="50%" stop-color="#0d3558" stop-opacity="0.15"/><stop offset="100%" stop-color="#0d3558" stop-opacity="0"/></radialGradient></defs><rect width="800" height="300" fill="url(#pg)" rx="28"/></svg>
+=======
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Partners section background"><defs><radialGradient id="pg" cx="15%" cy="50%" r="85%"><stop offset="0%" stop-color="#2f6da8" stop-opacity="0.45"/><stop offset="50%" stop-color="#0d3558" stop-opacity="0.15"/><stop offset="100%" stop-color="#0d3558" stop-opacity="0"/></radialGradient></defs><rect width="800" height="300" fill="url(#pg)" rx="28"/></svg>
+>>>>>>> 5f6d16d (chore: initial commit of Kobis Travels & Tours static site and Vite scaffold)
